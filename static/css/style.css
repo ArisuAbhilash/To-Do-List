@@ -1,0 +1,73 @@
+
+
+body{
+    margin: 0;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 10px;
+    background-color: aquamarine;
+    box-shadow: 4px 4px 4px;
+    min-height:45vh;
+    width:40vw;
+}
+
+.header{
+    justify-self:center;
+    border-bottom: 2px solid white;
+    font-size: 30px;
+
+}
+
+.add-new-task {
+    display: flex;
+    gap: 10px;
+}
+
+.add-new-task input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-new-task button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #f6c46e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-new-task button:hover{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.task-list {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.task-list li {
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}

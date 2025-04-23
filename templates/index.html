@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="{{url_for('static', filename ='/css/style.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class=header>To-Do List</h1>
+        <form class="add-new-task" method="POST" action="/add">
+            <input type="text" name="task" placeholder="Add New Task" id="inputTaskt">
+            <button type="submit">Add Task</button>
+        </form>
+        <ul class="task-list" id="tasklist">
+
+            {% for idx, task in tasks %}
+            <li>
+                {{ task }}
+                <a href="{{ url_for('delete', task_id=idx) }}" class="delete-btn">🗑️</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</body>
+
+</html>
