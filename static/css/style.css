@@ -6,22 +6,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:bisque;
 }
 
 .container{
     padding: 10px;
-    background-color: aquamarine;
-    box-shadow: 4px 4px 4px;
+    background-color: rgb(28, 227, 242);
+    box-shadow:10px 10px 20px;
     min-height:45vh;
     width:40vw;
+    border: 3px solid rgb(1, 1, 1);
+    border-radius: 5px;
 }
 
 .header{
-    justify-self:center;
+    text-align: center;
     border-bottom: 2px solid white;
     font-size: 30px;
 
 }
+
 
 .add-new-task {
     display: flex;
@@ -33,12 +37,13 @@ body{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    border: 2px solid black;
 }
 
 .add-new-task button {
     padding: 10px 15px;
     border: none;
-    background-color: #f6c46e;
+    background-color: #e87707;
     color: white;
     border-radius: 5px;
     cursor: pointer;
